@@ -11,9 +11,8 @@ TTL=60
 DOMAIN=
 VERBOSE=0
 
-usage()
-{
-    cat << EOF
+usage() {
+cat << EOF
 usage: $0 options
 example: $0 -h mysql.example.com -D pdns -z example.com -f router.example.com -u pdns -p pdns 192.168.10.1
 
@@ -31,7 +30,7 @@ OPTIONS:
 EOF
 }
 
-check_mysql(){
+check_mysql() {
     if [[ ! -x `which mysql` ]]; then
         echo "Mysql client not found!" >&2
         exit 1
