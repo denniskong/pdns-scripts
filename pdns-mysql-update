@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 DATABASE_HOST=
 DATABASE_PASSWORD=
 DATABASE_NAME=
@@ -16,7 +15,7 @@ cat << EOF
 usage: $0 options
 example: $0 -h mysql.example.com -D pdns -z example.com -f router.example.com -u pdns -p pdns 192.168.10.1
 
-This script create or updates a pdns A record!
+This script creates or updates a pdns A record!
 
 OPTIONS:
    -h      Database hostname
